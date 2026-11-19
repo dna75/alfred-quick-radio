@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>nl.spinnerz.radio</string>
+	<key>connections</key>
+	<dict>
+		<key>3A000000-0000-4000-8000-000000000001</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A000000-0000-4000-8000-000000000002</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A000000-0000-4000-8000-000000000002</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A000000-0000-4000-8000-000000000002</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A000000-0000-4000-8000-000000000002</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3A000000-0000-4000-8000-000000000002</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A000000-0000-4000-8000-000000000003</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3A000000-0000-4000-8000-000000000004</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A000000-0000-4000-8000-000000000005</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>dna75</string>
+	<key>description</key>
+	<string>Pick, add and search internet radio stations, played with mpv</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Quick Radio</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/bin/python3 radio.py list "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Pick a station · add = add · find = search online</string>
+				<key>title</key>
+				<string>Quick Radio</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3A000000-0000-4000-8000-000000000001</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./radio.sh "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3A000000-0000-4000-8000-000000000002</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Radio</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>3A000000-0000-4000-8000-000000000003</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>qr</string>
+				<key>subtext</key>
+				<string>Stop the radio</string>
+				<key>text</key>
+				<string>Stop radio</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>3A000000-0000-4000-8000-000000000004</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./radio.sh stop</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3A000000-0000-4000-8000-000000000005</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Quick Radio: internet radio from Alfred, played with mpv.
+
+rd                      list of your stations (last played first); type to filter by name or country, e.g. rd be
+rd add NAME             add a station: suggestions from radio-browser.info appear while you type
+rd add NAME URL [NL]    add a station with your own stream URL (country code optional; a copied stream URL is offered too)
+rd find NAME            search stations online; Enter adds, Cmd+Enter plays right away
+qr                      stop the radio (or press Enter on "Now playing" at the top of the list)
+
+On a station:  Enter play · Cmd+Enter copy stream URL · Opt+Enter remove from your list · Ctrl+Enter open stations file
+
+Requires mpv (brew install mpv). Other players (Spotify, Music) are paused when a station starts.
+Your stations are stored in ~/Library/Application Support/Alfred/Workflow Data/nl.spinnerz.radio/stations.json</string>
+	<key>uidata</key>
+	<dict>
+		<key>3A000000-0000-4000-8000-000000000001</key>
+		<dict>
+			<key>note</key>
+			<string>rd: pick a station</string>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>3A000000-0000-4000-8000-000000000002</key>
+		<dict>
+			<key>note</key>
+			<string>Plays with mpv, adds or removes</string>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>3A000000-0000-4000-8000-000000000003</key>
+		<dict>
+			<key>note</key>
+			<string>Notice when adding/removing</string>
+			<key>xpos</key>
+			<integer>560</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>3A000000-0000-4000-8000-000000000004</key>
+		<dict>
+			<key>note</key>
+			<string>qr: stop the radio</string>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>3A000000-0000-4000-8000-000000000005</key>
+		<dict>
+			<key>note</key>
+			<string>Stops mpv</string>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>rd</string>
+				<key>placeholder</key>
+				<string>rd</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Type this in Alfred to open the radio.</string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>/opt/homebrew/bin/mpv</string>
+				<key>placeholder</key>
+				<string>/opt/homebrew/bin/mpv</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Path to mpv. Leave as is for Homebrew; it is also searched for automatically.</string>
+			<key>label</key>
+			<string>mpv</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>mpv_path</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>~/Pictures/radio-logos</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Optional folder with station logos (PNG, file name = station name without spaces/punctuation, or the "logo" field in stations.json). Shown in the list and passed to mpv as cover art.</string>
+			<key>label</key>
+			<string>Logo folder</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>logo_folder</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/dna75/alfred-quick-radio</string>
+</dict>
+</plist>

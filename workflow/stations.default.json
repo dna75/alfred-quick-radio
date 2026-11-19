@@ -1,0 +1,142 @@
+[
+ {
+  "name": "Studio Brussel",
+  "url": "https://quantumcast.vrtcdn.be/stubru/mp3-128",
+  "country": "BE"
+ },
+ {
+  "name": "Radio 2",
+  "url": "https://icecast.omroep.nl/radio2-bb-mp3",
+  "country": "NL"
+ },
+ {
+  "name": "KINK",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KINK_DNA.mp3",
+  "country": "NL"
+ },
+ {
+  "name": "Bruut",
+  "url": "https://quantumcast.vrtcdn.be/stubru_bruut/mp3-128",
+  "country": "BE"
+ },
+ {
+  "name": "Hooray",
+  "url": "https://quantumcast.vrtcdn.be/stubru_hiphophooray/mp3-128",
+  "country": "BE"
+ },
+ {
+  "name": "Vuurland",
+  "url": "http://icecast.vrtcdn.be/stubru_tgs-high.mp3",
+  "country": "BE"
+ },
+ {
+  "name": "3FM",
+  "url": "https://icecast.omroep.nl/3fm-bb-mp3",
+  "country": "NL"
+ },
+ {
+  "name": "Radio Veronica",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICA.mp3",
+  "country": "NL"
+ },
+ {
+  "name": "BNR Nieuwsradio",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BNR_NIEUWSRADIO.mp3",
+  "country": "NL"
+ },
+ {
+  "name": "Ibiza Global Radio",
+  "url": "http://ibizaglobalradio.streaming-pro.com:8024/",
+  "country": "ES"
+ },
+ {
+  "name": "Radio 1",
+  "url": "https://icecast.omroep.nl/radio1-bb-mp3",
+  "country": "NL"
+ },
+ {
+  "name": "Radio 5",
+  "url": "https://icecast.omroep.nl/radio5-bb-mp3",
+  "country": "NL"
+ },
+ {
+  "name": "Radio 538",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3",
+  "country": "NL"
+ },
+ {
+  "name": "100% NL",
+  "url": "https://stream.100p.nl/100pctnl.mp3",
+  "country": "NL"
+ },
+ {
+  "name": "Qmusic",
+  "url": "https://stream.qmusic.nl/qmusic/mp3",
+  "country": "NL"
+ },
+ {
+  "name": "MNM",
+  "url": "http://icecast.vrtcdn.be/mnm-high.mp3",
+  "country": "BE"
+ },
+ {
+  "name": "Klara",
+  "url": "http://icecast-servers.vrtcdn.be/klara-high.mp3",
+  "country": "BE"
+ },
+ {
+  "name": "Tomorrowland",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OWR_WORLD_RADIO_NL.mp3",
+  "country": "BE"
+ },
+ {
+  "name": "Catalunya Radio",
+  "url": "https://directes-radio-int.ccma.cat/live-content/catalunya-radio-hls/master.m3u8",
+  "country": "ES"
+ },
+ {
+  "name": "Hit FM",
+  "url": "http://digitalhits.frilab.com:8000/digitalhits",
+  "country": "ES"
+ },
+ {
+  "name": "Flaix FM",
+  "url": "http://flaixfmweb.streaming-pro.com:8000",
+  "country": "ES"
+ },
+ {
+  "name": "Isla 106",
+  "url": "https://stream.isla106.com/isla106",
+  "country": "ES"
+ },
+ {
+  "name": "Mambo Radio Ibiza",
+  "url": "http://streamer.radio.co/sd7b28e5f3/listen",
+  "country": "ES"
+ },
+ {
+  "name": "BBC radio 1",
+  "url": "http://as-hls-ww-live.akamaized.net/pool_01505109/live/ww/bbc_radio_one/bbc_radio_one.isml/bbc_radio_one-audio%3d96000.norewind.m3u8",
+  "country": "UK"
+ },
+ {
+  "name": "BBC radio 2",
+  "url": "http://as-hls-ww-live.akamaized.net/pool_74208725/live/ww/bbc_radio_two/bbc_radio_two.isml/bbc_radio_two-audio%3d96000.norewind.m3u8",
+  "country": "UK"
+ },
+ {
+  "name": "BBC radio 3",
+  "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_three",
+  "country": "UK"
+ },
+ {
+  "name": "Capital UK",
+  "url": "https://media-ssl.musicradio.com/CapitalUK",
+  "country": "UK"
+ },
+ {
+  "name": "BBC radio 4",
+  "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm",
+  "country": "UK"
+ }
+]
